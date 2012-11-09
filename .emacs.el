@@ -5,7 +5,15 @@
 (setq load-path (append load-path (list "/home/santiago/.emacs.d/vendor")))
 
 ;;; Load init files
-(require 'init-django)
+;;;(require 'init-django)
+(load-file "/home/santiago/.emacs.d/emacs-for-python/epy-init.el")
+
+(add-to-list 'load-path "/home/santiago/.emacs.d/emacs-for-python/") ;; tell where to load the various files
+(require 'epy-setup)      ;; It will setup other loads, it is required!
+(require 'epy-python)     ;; If you want the python facilities [optional]
+(require 'epy-completion) ;; If you want the autocompletion settings [optional]
+(require 'epy-editing)    ;; For configurations related to editing [optional]
+(require 'epy-bindings)   ;; For my suggested keybindings [optional]
 
 ;;; Python IDE-like
 ;;; (require 'ipython)
