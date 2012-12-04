@@ -1,1 +1,0 @@
-/home/santiago/.emacs.d/
