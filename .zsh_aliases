@@ -1,0 +1,8 @@
+alias vu="vagrant up"
+alias vs="vagrant ssh"
+alias vd="vagrant destroy"
+alias vst="vagrant snapshot take"
+alias vsb="vagrant snapshot back"
+alias vsl="vagrant snapshot list"
+alias vsg="vagrant snapshot go"
+alias vsd="vagrant snapshot delete"
